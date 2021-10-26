@@ -1,0 +1,5 @@
+Template: NONE
+Clouds: 0.8152174
+Grime: 0
+PlacedObjects: LightFixture><535.66><433.1786><HolyFire~17.32051~-10~44, LightFixture><506.6245><370.3435><HolyFire~17.32051~-10~100, LightFixture><313.6962><434.461><HolyFire~17.32051~-10~74, LightSource><396.8679><705.3498><0.2282609~Environment~18~-269~-18~-243.3975~1~0, 
+FadePalette: 10, 0.8369565
