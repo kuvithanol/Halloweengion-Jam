@@ -1,0 +1,12 @@
+{
+   "regionPackName": "MoonlitAcres", 
+   "description": "No description", 
+   "author": "", 
+   "activated": true, 
+   "loadOrder": 2147483647, 
+   "regions": "HW", 
+   "thumbURL": "", 
+   "version": "1.0", 
+   "requirements": "", 
+   "checksum": "f3e2dcece4123cde48d9fded407e7fc3" 
+}

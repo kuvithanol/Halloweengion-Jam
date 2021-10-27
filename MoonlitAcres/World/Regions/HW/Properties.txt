@@ -1,0 +1,12 @@
+Palette: 0
+batDepleteCyclesMin: 2
+batDepleteCyclesMax: 7
+batDepleteCyclesMaxIfLessThanTwoLeft: 3
+batDepleteCyclesMaxIfLessThanFiveLeft: 4
+overseersSpawnChance: 0.8
+overseersMin: 0
+overseersMax: 6
+Subregion: Moonlit Acres
+playerGuideOverseerSpawnChance: 0.4
+Broken Shelters:
+Room Setting Templates:
