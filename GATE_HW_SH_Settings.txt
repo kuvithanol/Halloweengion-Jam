@@ -1,0 +1,6 @@
+Template: SH_SettingsTemplate_DarkSun
+Clouds: 0.2173913
+Palette: 0
+PlacedObjects: LightFixture><170.4791><260.3011><HolyFire~-145.6795~194~13, LightSource><417.5731><168.1568><1~Environment~-16~76~50~86.60254~1~0, 
+AmbientSounds: OMNI><AM_ENV-CityTone.ogg><734.9414><563.558><0.423913><0.8826087, SPOT><SO_NAT-Fire.ogg><718.8136><447.3225><0.3586957><1><169.8136><257.3225><-64.35535><-55.35535><0><0.1652175, 
+FadePalette: 10, 0.8260869
