@@ -2,7 +2,7 @@ Template: NONE
 Clouds: 0.02173913
 Grime: 0.5
 Palette: 19
-EffectColorB: 1
+EffectColorA: 6
 Effects: FireFlies-0.3152174-20-20, Lightning-0.2282609-21-89, BkgOnlyLightning-1-282-21, Fog-1-289-88, 
 PlacedObjects: LightFixture><471.167><243.61><HolyFire~17.32051~-10~0, LightFixture><1751.314><324.4269><HolyFire~-303.6795~269~85, LightFixture><1391.305><284.543><HolyFire~-282.6795~218~78, PuffBall><1504.066><232.8679><0~0~2~3, PuffBall><1520.271><233.3392><0~0~2~3, PuffBall><1808.864><225.1234><0~0~2~3, 
 AmbientSounds: SPOT><SO_NAT-Fire.ogg><59.44183><326.8066><0.5><1><471.4418><243.8066><-35.35534><-35.35534><0><0.154348, SPOT><SO_NAT-Fire.ogg><602.9147><584.6366><0.5><1><1389.915><286.6366><-35.35534><-35.35534><0><0.1652175, SPOT><SO_NAT-Fire.ogg><667.0506><149.9435><0.5><1><1752.051><323.9435><-35.35534><-35.35534><0><0.154348, 
