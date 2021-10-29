@@ -1,0 +1,8 @@
+Template: NONE
+Clouds: 0.02173913
+Grime: 0.5
+Palette: 19
+EffectColorB: 1
+Effects: FireFlies-0.3152174-20-20, Lightning-0.2282609-21-89, BkgOnlyLightning-1-282-21, Fog-1-289-88, 
+PlacedObjects: LightFixture><471.167><243.61><HolyFire~17.32051~-10~0, LightFixture><1754.314><342.4269><HolyFire~-303.6795~269~85, LightFixture><1387.305><288.543><HolyFire~-282.6795~218~78, PuffBall><1504.066><232.8679><0~0~2~3, PuffBall><1520.271><233.3392><0~0~2~3, PuffBall><1808.864><225.1234><0~0~2~3, 
+FadePalette: 10, 0.6195652, 0.7065217
