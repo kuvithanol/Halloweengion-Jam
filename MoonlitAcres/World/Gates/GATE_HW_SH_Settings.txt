@@ -1,5 +1,6 @@
-Template: SH_SettingsTemplate_DarkSun
+Template: NONE
 Palette: 0
+Effects: FireFlies-0.5543478-20-20, Moth-0.423913-19-95, Wasp-0.7282609-308-30, 
 PlacedObjects: LightFixture><170.6895><261.9358><HolyFire~17.32051~-10~7, LightSource><422.1724><167.1013><1~Environment~-6~70~50~86.60254~1~0, 
 AmbientSounds: OMNI><AM_ENV-CityTone.ogg><741.3867><565.1648><0.423913><0.8826087, SPOT><SO_NAT-Burning.ogg><712.1177><462.1><0.3586957><1><168.1177><258.1><-54.35535><-47.35535><0><0.154348, 
 FadePalette: 10, 0.8043478

@@ -1,2 +1,6 @@
+Template: NONE
+Palette: 10
+Effects: FireFlies-1-20-73, 
 PlacedObjects: LightFixture><452.4989><342.45><HolyFire~17.32051~-10~83, 
 AmbientSounds: OMNI><AM_ENV-CityTone.ogg><712.8464><560.6281><0.3369565><0.8826087, SPOT><SO_NAT-Burning.ogg><716.1909><463.0599><0.3043478><1><452.1908><342.0599><-35.35534><-35.35534><0><0.1, OMNI><AM_WIN-SubWnd.ogg><517.1221><563.1584><0.25><1, OMNI><AM_SUB-CaveTone.ogg><335.9146><561.1136><0.1521739><1, 
+FadePalette: 0, 0.1630435

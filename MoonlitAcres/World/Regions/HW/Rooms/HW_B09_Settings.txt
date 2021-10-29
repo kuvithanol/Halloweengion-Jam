@@ -1,3 +1,5 @@
 Template: NONE
+Effects: FireFlies-0.2717391-20-20, Moth-0.2173913-28-88, 
 PlacedObjects: LightFixture><170.188><202.9316><HolyFire~17.32051~-10~37, LightFixture><670.9457><425.0414><HolyFire~17.32051~-10~41, LightFixture><750.0881><1004.367><HolyFire~17.32051~-10~30, LightFixture><170.06><1062.809><HolyFire~17.32051~-10~54, LightFixture><531.0033><1222.95><HolyFire~17.32051~-10~46, 
+AmbientSounds: OMNI><AM_ENV-SubTerr.ogg><702.553><273.0572><0.5326087><0.6869565, 
 FadePalette: 10, 0.7934783, 0.8043478
