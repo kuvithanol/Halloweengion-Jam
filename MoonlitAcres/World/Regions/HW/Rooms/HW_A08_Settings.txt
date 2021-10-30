@@ -1,0 +1,5 @@
+Template: NONE
+DangerType: Flood
+RandomItemSpearChance: 0.3630434
+PlacedObjects: LightFixture><553.184><242.1888><HolyFire~17.32051~-10~89, LightFixture><291.4015><361.1306><HolyFire~17.32051~-10~91, Mushroom><816.447><619.9664><73.99994~3~2~3, Mushroom><834.3395><623.1193><0~0~2~3, LightBeam><191.8373><445.6799><-326~336~-231~337~74~14~114~-258~0.3782607~0~0.2065217~1, 
+FadePalette: 10, 0.8695652

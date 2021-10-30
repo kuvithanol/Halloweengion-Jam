@@ -1,0 +1,10 @@
+Template: NONE
+CeilingDrips: 0.6521739
+Grime: 0.2826087
+Palette: 35
+EffectColorA: 21
+EffectColorB: 9
+Effects: RockFlea-0.4347826-20-20, 
+PlacedObjects: InsectGroup><986.4156><316.6378><15~101~-168~-251~FireFly~0.173913, LightSource><1093.907><795.6233><0.1195652~Environment~-939~-634~-320~-307.3975~1~1, LightFixture><591.3043><339.2087><HolyFire~17.32051~-10~13, LightFixture><309.6133><361.6461><HolyFire~17.32051~-10~81, 
+AmbientSounds: OMNI><AM_IND-Arc.ogg><707.6382><322.9158><0.08695652><0.1782609, OMNI><AM_ENV-NatWind.ogg><714.5296><492.4478><0.4347826><0.7847826, OMNI><AM_IND-Fabrik02.ogg><722.6589><235.9281><0.4456522><0.6673913, 
+FadePalette: 10, 0.5652174

@@ -1,0 +1,6 @@
+Template: NONE
+DangerType: Rain
+RandomItemSpearChance: 0.3630434
+EffectColorA: 14
+PlacedObjects: LightFixture><1670.434><177.0786><HolyFire~17.32051~-10~83, LightFixture><1329.401><276.1307><HolyFire~17.32051~-10~28, LightFixture><2194.299><561.1938><HolyFire~17.32051~-10~21, LightFixture><431.301><219.48><HolyFire~-125.6795~232~16, LightFixture><853.3104><218.5636><HolyFire~17.32051~-10~62, LightFixture><692.5164><597.0507><HolyFire~17.32051~-10~47, LightSource><1841.324><453.8442><0.5326087~EffectColor1~36~95~-355~-197.3975~1~0, LightSource><1996.574><470.3142><0.5326087~EffectColor1~10~90~50~86.60254~1~0, LightSource><1682.7><491.5131><0.4891304~EffectColor1~0~73~50~86.60254~1~0, 
+FadePalette: 10, 0.8586956, 0.8543479
