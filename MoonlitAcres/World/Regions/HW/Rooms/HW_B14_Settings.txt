@@ -1,4 +1,5 @@
 Template: NONE
-Effects: FireFlies-0.3369565-20-20, BkgOnlyLightning-1-310-17, Wasp-0.8913044-17-102, 
+Effects: FireFlies-0.3369565-20-20, BkgOnlyLightning-1-310-17, Wasp-0.8913044-17-102, Flies-0.1630435-240-97, RockFlea-0.3478261-237-164, 
 PlacedObjects: LightFixture><270.3001><419.2524><HolyFire~17.32051~-10~62, 
+AmbientSounds: SPOT><SO_NAT-Fire.ogg><727.1337><447.0872><0.5><1><272.1337><423.0872><-35.35534><-35.35534><0><0.1652175, 
 FadePalette: 10, 0.8478261, 0.8586956

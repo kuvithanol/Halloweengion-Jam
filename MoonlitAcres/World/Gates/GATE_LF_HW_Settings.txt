@@ -1,4 +1,6 @@
 Template: NONE
-Palette: 14
+Palette: 19
+EffectColorA: 2
+EffectColorB: 21
 PlacedObjects: LightFixture><730.661><264.0709><HolyFire~-260.6795~-224~71, 
-FadePalette: 10, 0.7608696
+FadePalette: 10, 0.75
