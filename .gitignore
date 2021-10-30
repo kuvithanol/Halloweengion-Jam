@@ -1,0 +1,7 @@
+*.sln
+*.csproj
+*.user
+src/MoonlitAcre/.idea
+src/MoonlitAcre/bin
+src/MoonlitAcre/obj
+src/MoonlitAcre/Properties
