@@ -63,6 +63,9 @@ namespace MoonlitAcre {
             Vector2 v = Vector3.Slerp(lastRotation, rotation, timeStacker);
             sLeaser.sprites[0].SetPosition(pos - camPos);
             sLeaser.sprites[0].rotation = Custom.VecToDeg(v);
+            if (BitesLeft is not 0 and not 3) {
+                sLeaser.sprites[0].element = Futile.atlasManager.GetElementWithName("pumpkinbit" + (3 - BitesLeft));
+            }
 
             //sLeaser.sprites[0].color = blink <= 0 || Random.value >= 0.5 ? color : blinkColor;
             if (!slatedForDeletetion && room == rCam.room)
@@ -96,7 +99,7 @@ namespace MoonlitAcre {
         }
 
         public int BitesLeft { get; private set; } = 3;
-        public int FoodPoints => 1;
+        public int FoodPoints => 2;
         public bool Edible => true;
         public bool AutomaticPickUp => true;
     }
