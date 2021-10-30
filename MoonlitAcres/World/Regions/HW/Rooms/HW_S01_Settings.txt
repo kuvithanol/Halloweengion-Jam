@@ -1,0 +1,4 @@
+Template: NONE
+EffectColorA: 13
+PlacedObjects: LightSource><377.3691><295.6606><0.2717391~EffectColor1~-178~96~50~86.60254~0~0, LightSource><377.1682><264.6082><0.4891304~EffectColor1~5~118~39~42.60254~0~0, 
+FadePalette: 10, 0.8586956

@@ -1,4 +1,4 @@
 Template: NONE
 Palette: 0
-PlacedObjects: LightFixture><1750.935><300.5607><HolyFire~17.32051~-10~10, LightFixture><950.6102><401.393><HolyFire~17.32051~-10~3, LightFixture><2052.859><401.0822><HolyFire~17.32051~-10~66, LightFixture><251.1849><301.6738><HolyFire~17.32051~-10~92, LightFixture><2740.59><331.1306><HolyFire~17.32051~-10~36, LightFixture><1389.832><279.3922><HolyFire~17.32051~-10~73, 
+PlacedObjects: LightFixture><1750.935><300.5607><HolyFire~17.32051~-10~10, LightFixture><782.6102><173.393><HolyFire~17.32051~-10~3, LightFixture><2052.859><401.0822><HolyFire~17.32051~-10~66, LightFixture><251.1849><301.6738><HolyFire~17.32051~-10~92, LightFixture><2740.59><331.1306><HolyFire~17.32051~-10~36, LightFixture><1389.832><279.3922><HolyFire~17.32051~-10~73, 
 FadePalette: 10, 0.8586956, 0.8586956, 0.8586956
