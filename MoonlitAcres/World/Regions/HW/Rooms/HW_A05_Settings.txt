@@ -1,0 +1,6 @@
+DangerType: FloodAndRain
+Clouds: 0.1546647
+Grime: 0.1520041
+Palette: 0
+PlacedObjects: LightFixture><368.8577><273.8591><HolyFire~17.32051~-10~89, LightFixture><330.4218><478.0489><HolyFire~17.32051~-10~59, LightFixture><631.1803><514.9267><HolyFire~17.32051~-10~77, 
+FadePalette: 10, 0.7733245
