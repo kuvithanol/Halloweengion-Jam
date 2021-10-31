@@ -1,6 +1,9 @@
+Template: NONE
 DangerType: FloodAndRain
 Clouds: 0.1546647
 Grime: 0.1520041
 Palette: 0
+Effects: FireFlies-0.3478261-20-20, Moth-0.4021739-17-89, 
 PlacedObjects: LightFixture><368.8577><273.8591><HolyFire~17.32051~-10~89, LightFixture><330.4218><478.0489><HolyFire~17.32051~-10~59, LightFixture><631.1803><514.9267><HolyFire~17.32051~-10~77, 
+AmbientSounds: SPOT><SO_NAT-Fire.ogg><735.4377><447.81><0.5><1><632.4377><522.8099><-35.35534><-35.35534><0><0.154348, SPOT><SO_NAT-Fire.ogg><735.3448><448.1262><0.5><1><366.3448><273.1262><-35.35534><-35.35534><0><0.154348, SPOT><SO_NAT-Fire.ogg><735.6807><447.9142><0.5><1><330.6807><480.9142><-35.35534><-35.35534><0><0.154348, OMNI><AM_ENV-SubTerr.ogg><698.4479><327.9709><0.173913><1, OMNI><AM_ENV-LightWind.ogg><716.6709><571.3539><0.1847826><0.8043478, 
 FadePalette: 10, 0.7733245
