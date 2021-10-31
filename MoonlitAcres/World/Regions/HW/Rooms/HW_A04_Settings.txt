@@ -1,0 +1,7 @@
+Template: NONE
+Palette: 10
+EffectColorA: 0
+EffectColorB: 0
+PlacedObjects: LightFixture><651.4244><343.1852><HolyFire~17.32051~-10~74, LightFixture><310.4072><422.1772><HolyFire~17.32051~-10~34, 
+AmbientSounds: SPOT><SO_NAT-Fire.ogg><719.188><444.9318><0.5><1><552.188><377.9318><-35.35534><-35.35534><0><0.154348, SPOT><SO_NAT-Fire.ogg><718.8114><444.9335><0.5><1><311.8114><427.9335><-35.35534><-35.35534><0><0.154348, 
+FadePalette: 0, 0.1413043
