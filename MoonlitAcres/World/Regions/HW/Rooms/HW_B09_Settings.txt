@@ -1,8 +1,8 @@
 Template: NONE
 DangerType: FloodAndRain
 RainIntensity: 0.2934783
-Clouds: 0.04347826
-Effects: FireFlies-0.2717391-20-20, Moth-0.2826087-28-88, RockFlea-0.1304348-357-30, 
-PlacedObjects: LightFixture><170.188><202.9316><HolyFire~17.32051~-10~37, LightFixture><671.9457><421.0414><HolyFire~17.32051~-10~41, LightFixture><750.0881><1004.367><HolyFire~17.32051~-10~30, LightFixture><170.06><1062.809><HolyFire~17.32051~-10~54, LightFixture><531.0033><1222.95><HolyFire~17.32051~-10~46, 
+Clouds: 0.7608696
+Effects: RockFlea-0.1304348-357-30, LightBurn-0.07608695-20-20, BkgOnlyLightning-1-30-30, 
+PlacedObjects: LightFixture><170.188><202.9316><HolyFire~17.32051~-10~37, LightFixture><671.9457><421.0414><HolyFire~17.32051~-10~41, LightFixture><750.0881><1004.367><HolyFire~17.32051~-10~30, LightFixture><170.06><1062.809><HolyFire~17.32051~-10~54, LightFixture><531.0033><1222.95><HolyFire~17.32051~-10~46, DangleFruit><830.1495><1224.617><0~0~2~3, DangleFruit><864.1661><1188.569><0~0~2~3, 
 AmbientSounds: OMNI><AM_ENV-SubTerr.ogg><702.553><273.0572><0.5326087><0.6869565, SPOT><SO_NAT-Fire.ogg><-1000><-1000><0.5><1><533.8383><1224.179><-35.35534><-35.35534><0><0.1652175, SPOT><SO_NAT-Fire.ogg><-1000><-1000><0.5><1><169.9312><1062.835><-35.35534><-35.35534><0><0.1434784, SPOT><SO_NAT-Fire.ogg><519.0519><556.0275><0.5><1><673.0519><420.1736><-35.35534><-35.35534><0><0.1652175, SPOT><SO_NAT-Fire.ogg><803.0603><527.0634><0.5><1><750.0603><1005.063><-35.35534><-35.35534><0><0.1434784, SPOT><SO_NAT-Burning.ogg><427.6115><381.8943><0.5><1><167.6115><204.8943><-35.35534><-35.35534><0><0.1652175, OMNI><AM_ENV-LightWind.ogg><787.6212><408.1591><0.1847826><0.5891304, 
 FadePalette: 10, 0.7934783, 0.8043478

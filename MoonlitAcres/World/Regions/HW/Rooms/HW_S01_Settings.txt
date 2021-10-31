@@ -2,4 +2,5 @@ Template: NONE
 DangerType: Thunder
 EffectColorA: 13
 PlacedObjects: LightSource><340.3691><319.6606><0.2717391~EffectColor1~-178~96~-547~152.6026~0~0, LightSource><322.1682><266.6082><0.4891304~EffectColor1~5~118~-526~137.6025~0~0, CosmeticSlimeMold><384.5948><230.3739><-3~106, CosmeticSlimeMold><266.9299><226.4127><4~93, CosmeticSlimeMold2><254.9178><309.3912><10~98, CosmeticSlimeMold2><413.5524><320.469><2~77, CosmeticSlimeMold><356.8003><316.5077><-7~123, CosmeticSlimeMold2><299.6447><326.6118><22~126, 
+AmbientSounds: SPOT><AM_ENV-LightWind.ogg><752.8906><519.8578><0.1413043><0.8826087><341.8906><439.8578><-35.35534><-35.35534><0><0.2630436, 
 FadePalette: 10, 0.8586956
