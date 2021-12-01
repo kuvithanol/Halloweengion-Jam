@@ -11,13 +11,14 @@ HW_A06 : HW_B09, HW_A05
 HW_A07 : HW_S02, HW_A10, HW_B09
 HW_A08 : HW_B09, HW_C03, HW_B12
 HW_B09 : HW_A07, HW_A06, DISCONNECTED, HW_A11, HW_A05, HW_A08
-HW_A10 : HW_A16, HW_A07, HW_B14
+HW_A10 : HW_A16, HW_A07, HW_connec
+HW_connec : HW_A10, HW_B14
 HW_A11 : HW_B09, HW_B14, HW_B12
 HW_B12 : HW_A11, HW_A13, HW_A08
 HW_A13 : HW_B12, HW_B14
-HW_B14 : HW_A10, HW_A11, HW_C15, HW_A13
+HW_B14 : HW_connec, HW_A11, HW_C15, HW_A13
 HW_C15 : GATE_HW_SH, HW_B14, HW_S03
-HW_A16 : HW_A10
+HW_A16 : DISCONNECTED, HW_A10
 
 HW_S01 : HW_C03 : SHELTER
 HW_S02 : HW_A07 : SHELTER
@@ -27,24 +28,25 @@ END ROOMS
 	
 CREATURES
 //all
-HW_B01 : 2-Pink
-HW_B09 : 10-reaper
-HW_A16 : 2-smallneedleworm-2
+HW_B01 : 2-Centipede-{0.9}
+HW_B09 : 10-Centipede-{0.5}, 9-White
+HW_A16 : 2-SmallNeedleWorm-2
 //white
 
 
 //white and yellow
 (0,1)HW_A11 : 3-pink
-
+(0,1)HW_A02 : 2-Pink
 //yellow
-
+(1)HW_B12 : 3-green
 
 //white and red
-(0,2)HW_C03 : 5-reaper
-(0,2)HW_A10 : 4-reaper
+(0,2)HW_C03 : 5-ReaperLizard
+(0,2)HW_A10 : 4-ReaperLizard
+(0,2)HW_B12 : 3-ReaperLizard
 //red
-HW_A11 : 3-cyan
-
+(2)HW_A11 : 3-Cyan
+(2)HW_A02 : 2-ReaperLizard
 END CREATURES
 
 BAT MIGRATION BLOCKAGES
