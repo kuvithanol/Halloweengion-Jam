@@ -1,3 +1,6 @@
 -["christmas", color(80, 255, 80)]
 [#nm:"pinetree", #tp:"variedSoft", #pxlSize:point(150, 180), #vars:3, #random:0, #depth:8, #round:0, #contourExp:1, #selfShade:0, #highLightBorder:1.0, #depthAffectHilites:0, #shadowBorder:0.8, #smoothShading:5, #colorize:0, #tags:[], #notes:[]]
 [#nm:"candycanes", #tp:"variedSoft", #pxlSize:point(100, 150), #vars:2, #random:0, #depth:4, #round:0, #contourExp:1, #selfShade:0, #highLightBorder:1.0, #depthAffectHilites:0, #shadowBorder:0.8, #smoothShading:5, #colorize:0, #tags:[], #notes:[]]
+[#nm:"RibbonPart", #tp:"soft", #colorTreatment:"standard", #bevel:3, #sz:point(300,300), #depth:4, #round:1, #contourExp:1, #selfShade:1, #shadowBorder:1.0, #smoothShading:2, #depthAffectHilites:0.2, #highLightBorder:1.0, #tags:[], #layerExceptions:[], #notes:[]]
+[#nm:"RibbonKnot1", #tp:"soft", #colorTreatment:"standard", #bevel:3, #sz:point(300,300), #depth:4, #round:1, #contourExp:1, #selfShade:1, #shadowBorder:1.0, #smoothShading:2, #depthAffectHilites:0.2, #highLightBorder:1.0, #tags:[], #layerExceptions:[], #notes:[]]
+[#nm:"RibbonKnot2", #tp:"soft", #colorTreatment:"standard", #bevel:3, #sz:point(300,300), #depth:4, #round:1, #contourExp:1, #selfShade:1, #shadowBorder:1.0, #smoothShading:2, #depthAffectHilites:0.2, #highLightBorder:1.0, #tags:[], #layerExceptions:[], #notes:[]]
