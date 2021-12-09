@@ -1,0 +1,9 @@
+Template: NONE
+Clouds: 0.4130435
+Grime: 0.1304348
+Palette: 10
+EffectColorA: 8
+EffectColorB: 19
+Effects: LightBurn-0.1086956-20-20, BkgOnlyLightning-1-285-18, FireFlies-0.2065217-542-15, RockFlea-0.4130435-808-15, SkyDandelions-0.3369565-1071-14, 
+PlacedObjects: InsectGroup><577.1988><296.7721><53~213~233~-312~StandardFly~0.3478261, LightFixture><489.834><303.1815><HolyFire~313.3205~-246~97, LightFixture><310.6138><663.3536><HolyFire~502.3205~-541~16, LightSource><886.4088><671.8716><0.2608696~EffectColor1~0~100~-858~-152.3975~0~0, LightSource><908.1008><717.3273><0.2173913~EffectColor2~0~100~-847~-279.3975~0~0, LightSource><785.6517><625.1303><0.2173913~EffectColor2~0~100~-851~-322.3975~0~0, NoSpearStickZone><202.7228><605.6981><278~10, NoSpearStickZone><992.7307><727.1991><-309~28, 
+FadePalette: 1, 0.3043478
