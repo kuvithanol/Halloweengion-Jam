@@ -1,0 +1,7 @@
+Template: NONE
+Clouds: 0.5
+EffectColorA: 14
+EffectColorB: 9
+Effects: BkgOnlyLightning-1-20-20, LightBurn-0.1086956-287-25, FireFlies-0.2065217-560-22, Wasp-0.2065217-823-17, RockFlea-0.4456522-1089-23, 
+PlacedObjects: LightFixture><448.8915><281.082><HolyFire~165.3205~84~38, LightSource><2063.12><502.5977><0.1413043~EffectColor1~-12~96~-591~-31.39752~1~1, LightFixture><1349.986><300.8005><HolyFire~98.3205~-186~32, LightSource><2125.337><502.3842><0.1521739~EffectColor1~-64~68~-686~-125.3975~1~1, LightSource><2054.072><281.8136><0.4130435~EffectColor1~6~117~-418~-42.39746~1~0, NoSpearStickZone><2114.252><611.3><-273~129, NoSpearStickZone><178.9449><627.2053><177~-46, 
+FadePalette: 10, 0.8586956, 0.8586956
