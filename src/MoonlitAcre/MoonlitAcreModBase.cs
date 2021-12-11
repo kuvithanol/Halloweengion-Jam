@@ -1,21 +1,37 @@
-﻿using BepInEx;
+using BepInEx;
 using UnityEngine;
 using Colour = UnityEngine.Color;
 
 namespace MoonlitAcre {
-    
+
     [BepInPlugin("com.rainworldgame.halloweegionjam.plugin", "Halloweegion Jam (Moonlit Acre)", "1.0")]
     public class MoonlitAcreModBase : BaseUnityPlugin {
         private void OnEnable() {
-            
+            //SovSam's colorful daddies
+            FestiveRot.ApplyHooks();
+
             On.AbstractConsumable.IsTypeConsumable += AbstractConsumableOnIsTypeConsumable;
             On.Room.Loaded += RoomOnLoaded;
             On.AbstractPhysicalObject.Realize += AbstractPhysicalObjectOnRealize;
             On.Player.Grabability += PlayerOnGrabability;
             On.RainWorld.Start += RainWorldOnStart;
+            On.ItemSymbol.SpriteNameForItem += ItemSymbolOnSpriteNameForItem;
+            On.ItemSymbol.ColorForItem += ItemSymbolOnColorForItem;
             
             //Lightning Colour change by LB Gamer
             On.Lightning.ctor += LightningOnCtor;
+        }
+
+        private Colour ItemSymbolOnColorForItem(On.ItemSymbol.orig_ColorForItem orig, AbstractPhysicalObject.AbstractObjectType itemType, int intData) {
+            if (itemType == EnumExt_MoonlitAcre.Pumpkin)
+                return new(0.608f, 0.22f, 0f);
+            return orig(itemType, intData);
+        }
+
+        private string ItemSymbolOnSpriteNameForItem(On.ItemSymbol.orig_SpriteNameForItem orig, AbstractPhysicalObject.AbstractObjectType itemType, int intData) {
+            if (itemType == EnumExt_MoonlitAcre.Pumpkin)
+                return "pumpkinicon";
+            return orig(itemType, intData);
         }
 
         private int PlayerOnGrabability(On.Player.orig_Grabability orig, Player self, PhysicalObject obj) {
@@ -25,17 +41,17 @@ namespace MoonlitAcre {
 
         private void RainWorldOnStart(On.RainWorld.orig_Start orig, RainWorld self) {
             orig(self);
-            EmbeddedResourceLoader.LoadEmbeddedResource("pumpkin");
-            for (int i = 1; i <= 2; i++) EmbeddedResourceLoader.LoadEmbeddedResource("pumpkinbit" + i);
+            EmbeddedResourceLoader.LoadEmbeddedResource("pumpkin2");
+            for (int i = 1; i <= 2; i++) EmbeddedResourceLoader.LoadEmbeddedResource("pumpkinbit" + i + "2");
+            EmbeddedResourceLoader.LoadEmbeddedResource("pumpkinicon");
         }
 
         private void LightningOnCtor(On.Lightning.orig_ctor orig, Lightning self, Room room, float intensity, bool bkgOnly) {
             orig(self, room, intensity, bkgOnly);
-            if (room.world.region.name == "HW") {
+            if (room.world.region.name == "HW")
                 self.bkgGradient = new Colour[2];
-                self.bkgGradient[0] = new Colour(0.984313727f, 0.564705881f, 0.160784325f);
-                self.bkgGradient[1] = new Colour(1f, 0.5f, 0f);
-            }
+                self.bkgGradient[0] = new(0.984313727f, 0.564705881f, 0.160784325f);
+                self.bkgGradient[1] = new(1f, 0.5f, 0f);
         }
 
         private void AbstractPhysicalObjectOnRealize(On.AbstractPhysicalObject.orig_Realize orig, AbstractPhysicalObject self) {
