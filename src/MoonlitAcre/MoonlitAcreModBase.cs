@@ -42,8 +42,7 @@ namespace MoonlitAcre {
         private void RainWorldOnStart(On.RainWorld.orig_Start orig, RainWorld self) {
             orig(self);
             EmbeddedResourceLoader.LoadEmbeddedResource("pumpkin2");
-            EmbeddedResourceLoader.LoadEmbeddedResource("pumpkinbit12");
-            EmbeddedResourceLoader.LoadEmbeddedResource("pumpkinbit22");
+            for (int i = 1; i <= 2; i++) EmbeddedResourceLoader.LoadEmbeddedResource("pumpkinbit" + i + "2");
             EmbeddedResourceLoader.LoadEmbeddedResource("pumpkinicon");
         }
 
