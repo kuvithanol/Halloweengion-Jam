@@ -48,10 +48,11 @@ namespace MoonlitAcre {
 
         private void LightningOnCtor(On.Lightning.orig_ctor orig, Lightning self, Room room, float intensity, bool bkgOnly) {
             orig(self, room, intensity, bkgOnly);
-            if (room.world.region.name == "HW")
+            if (room.world.region != null && room.world.region.name == "HW") {
                 self.bkgGradient = new Colour[2];
                 self.bkgGradient[0] = new(0.984313727f, 0.564705881f, 0.160784325f);
                 self.bkgGradient[1] = new(1f, 0.5f, 0f);
+            }
         }
 
         private void AbstractPhysicalObjectOnRealize(On.AbstractPhysicalObject.orig_Realize orig, AbstractPhysicalObject self) {
