@@ -4,21 +4,10 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Properties\**" />
-    <Compile Remove="References\**" />
-    <EmbeddedResource Remove="Properties\**" />
-    <EmbeddedResource Remove="References\**" />
-    <None Remove="Properties\**" />
-    <None Remove="References\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="NewResourceLoader.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="pumpkin2.png" />
     <EmbeddedResource Include="pumpkinbit12.png" />
-	<EmbeddedResource Include="pumpkinbit22.png" />
-	<EmbeddedResource Include="pumpkinicon.png" />
+    <EmbeddedResource Include="pumpkinbit22.png" />
+    <EmbeddedResource Include="pumpkinicon.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
