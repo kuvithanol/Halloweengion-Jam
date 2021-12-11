@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using RWCustom;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -13,7 +13,7 @@ namespace MoonlitAcre {
             //Stripped from DangleFruit
 
             bodyChunks = new BodyChunk[1];
-            bodyChunks[0] = new BodyChunk(this, 0, new Vector2(0.0f, 0.0f), 8f, 0.9f);
+            bodyChunks[0] = new(this, 0, new(0.0f, 0.0f), 8f, 0.9f);
             bodyChunkConnections = new BodyChunkConnection[0];
             airFriction = 0.999f;
             gravity = 0.9f;
@@ -54,7 +54,7 @@ namespace MoonlitAcre {
 
         public void InitiateSprites(RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam) {
             sLeaser.sprites = new FSprite[1];
-            sLeaser.sprites[0] = new FSprite("pumpkin") { scale = 2 };
+            sLeaser.sprites[0] = new("pumpkin2") { scale = 1 };
             AddToContainer(sLeaser, rCam, null);
         }
 
@@ -64,7 +64,7 @@ namespace MoonlitAcre {
             sLeaser.sprites[0].SetPosition(pos - camPos);
             sLeaser.sprites[0].rotation = Custom.VecToDeg(v);
             if (BitesLeft is not 0 and not 3) {
-                sLeaser.sprites[0].element = Futile.atlasManager.GetElementWithName("pumpkinbit" + (3 - BitesLeft));
+                sLeaser.sprites[0].element = Futile.atlasManager.GetElementWithName("pumpkinbit" + (3 - BitesLeft) + "2");
             }
 
             //sLeaser.sprites[0].color = blink <= 0 || Random.value >= 0.5 ? color : blinkColor;
