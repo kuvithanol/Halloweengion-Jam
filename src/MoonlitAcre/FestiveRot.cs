@@ -19,14 +19,14 @@ namespace MoonlitAcre {
         }
 
         private static Color ShortcutGraphicsOnShortCutColor(On.ShortcutGraphics.orig_ShortCutColor orig, ShortcutGraphics self, Creature crit, IntVector2 pos) {
-            if (crit.Template.type == CreatureTemplate.Type.DaddyLongLegs && (crit as DaddyLongLegs).colorClass && self.room.world.region.name == "HW" && self.room.world.region != null)
+            if (crit.Template.type == CreatureTemplate.Type.DaddyLongLegs && (crit as DaddyLongLegs).colorClass && self.room.world.region != null && self.room.world.region.name == "HW")
                 return new(0f, 0.6f, 0.3f);
             return orig(self, crit, pos);
         }
 
         private static void TubeGraphicOnDrawSprite(On.DaddyCorruption.CorruptionTube.TubeGraphic.orig_DrawSprite orig, DaddyCorruption.CorruptionTube.TubeGraphic self, RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos) {
             orig(self, sLeaser, rCam, timeStacker, camPos);
-            if (self.owner.room.world.region.name == "HW" && !self.owner.owner.GWmode) {
+            if (self.owner.room.world.region != null && self.owner.room.world.region.name == "HW" && !self.owner.owner.GWmode) {
                 foreach (FSprite s in sLeaser.sprites.AsEnumerable().Where(x => x.color == new Color(0.7f, 0f, 0f)).ToList()) {
                     s.color = new(0f, 0.6f, 0.3f);
                 }
@@ -38,7 +38,7 @@ namespace MoonlitAcre {
 
         private static void TubeGraphicOnApplyPalette(On.DaddyCorruption.CorruptionTube.TubeGraphic.orig_ApplyPalette orig, DaddyCorruption.CorruptionTube.TubeGraphic self, RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette) {
             orig(self, sLeaser, rCam, palette);
-            if (self.owner.room.world.region.name == "HW" && !self.owner.owner.GWmode) {
+            if (self.owner.room.world.region != null && self.owner.room.world.region.name == "HW" && !self.owner.owner.GWmode) {
                 for (int i = 0; i < (sLeaser.sprites[self.firstSprite] as TriangleMesh).vertices.Length; i++) {
                     (sLeaser.sprites[self.firstSprite] as TriangleMesh).verticeColors[i] = new(0.01f, 0.01f, 0.01f);
                 }
@@ -47,14 +47,15 @@ namespace MoonlitAcre {
 
         private static void DaddyCorruptionOnCtor(On.DaddyCorruption.orig_ctor orig, DaddyCorruption self, Room room) {
             orig(self, room);
-            if (room.world.region.name == "HW" && !self.GWmode)
+            if (room.world.region != null && room.world.region.name == "HW" && !self.GWmode) {
                 self.eyeColor = new(0f, 0.6f, 0.3f);
                 self.effectColor = new(0.7f, 0f, 0f);
+            }
         }
 
         private static void DaddyDangleTubeOnApplyPalette(On.DaddyGraphics.DaddyDangleTube.orig_ApplyPalette orig, DaddyGraphics.DaddyDangleTube self, RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette) {
             orig(self, sLeaser, rCam, palette);
-            if (self.owner.daddy.room.world.region.name == "HW" && self.owner.daddy.colorClass) {
+            if (self.owner.daddy.room.world.region != null && self.owner.daddy.room.world.region.name == "HW" && self.owner.daddy.colorClass) {
                 for (int i = 0; i < (sLeaser.sprites[self.firstSprite] as TriangleMesh).vertices.Length; i++) {
                     (sLeaser.sprites[self.firstSprite] as TriangleMesh).verticeColors[i] = new(0.01f, 0.01f, 0.01f);
                 }
@@ -63,7 +64,7 @@ namespace MoonlitAcre {
 
         private static void DaddyTubeGraphicOnApplyPalette(On.DaddyGraphics.DaddyTubeGraphic.orig_ApplyPalette orig, DaddyGraphics.DaddyTubeGraphic self, RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, RoomPalette palette) {
             orig(self, sLeaser, rCam, palette);
-            if (self.owner.daddy.room.world.region.name == "HW" && self.owner.daddy.colorClass) {
+            if (self.owner.daddy.room.world.region != null && self.owner.daddy.room.world.region.name == "HW" && self.owner.daddy.colorClass) {
                 for (int i = 0; i < (sLeaser.sprites[self.firstSprite] as TriangleMesh).vertices.Length; i++) {
                     (sLeaser.sprites[self.firstSprite] as TriangleMesh).verticeColors[i] = new(0.01f, 0.01f, 0.01f);
                 }
@@ -72,17 +73,20 @@ namespace MoonlitAcre {
 
         private static void DaddyLongLegsOnCtor(On.DaddyLongLegs.orig_ctor orig, DaddyLongLegs self, AbstractCreature abstractCreature, World world) {
             orig(self, abstractCreature, world);
-            if (world.region.name == "HW" && self.colorClass)
+            if (world.region != null && world.region.name == "HW" && self.colorClass) {
                 self.eyeColor = new(0f, 0.6f, 0.3f);
                 self.effectColor = new(0.7f, 0f, 0f);
+            }
         }
 
         private static void DaddyGraphicsOnInitiateSprites(On.DaddyGraphics.orig_InitiateSprites orig, DaddyGraphics self, RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam) {
             orig(self, sLeaser, rCam);
-            if (SantaHat.hats.TryGetValue(self, out List<SantaHat> selfHats) && selfHats.Count > 0 && self.daddy.room.world.region.name == "HW" && self.daddy.colorClass)
+            if (SantaHat.hats.TryGetValue(self, out List<SantaHat> selfHats) && selfHats.Count > 0 && self.daddy.room.world.region != null && self.daddy.room.world.region.name == "HW" && self.daddy.colorClass) {
                 foreach (SantaHat hat in selfHats)
                     rCam.room.AddObject(hat);
-            else if (self.daddy.room.world.region.name == "HW" && self.daddy.colorClass) {
+            }
+            else if (self.daddy.room.world.region != null && self.daddy.room.world.region.name == "HW" && self.daddy.colorClass)
+            {
                 /*int chunkCount = self.daddy.bodyChunks.Length;
                 int firstChunkSprite = self.BodySprite(0);// (int)typeof(DaddyGraphics).GetMethod("BodySprite", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance).Invoke(self, new object[] { 0 });
                 for (int i = 0; i < chunkCount; i++) {
@@ -94,7 +98,7 @@ namespace MoonlitAcre {
 
         private static void DaddyGraphicsOnDrawSprites(On.DaddyGraphics.orig_DrawSprites orig, DaddyGraphics self, RoomCamera.SpriteLeaser sLeaser, RoomCamera rCam, float timeStacker, Vector2 camPos) {
             orig(self, sLeaser, rCam, timeStacker, camPos);
-            if (SantaHat.hats.TryGetValue(self, out List<SantaHat> selfHats) && self.daddy.room.world.region.name == "HW" && self.daddy.colorClass) {
+            if (SantaHat.hats.TryGetValue(self, out List<SantaHat> selfHats) && self.daddy.room.world.region != null && self.daddy.room.world.region.name == "HW" && self.daddy.colorClass) {
                 foreach (FSprite s in sLeaser.sprites.AsEnumerable().Where(x => x.color == new Color(0.7f, 0f, 0f)).ToList()) {
                     s.color = new(0f, 0.6f, 0.3f);
                 }
