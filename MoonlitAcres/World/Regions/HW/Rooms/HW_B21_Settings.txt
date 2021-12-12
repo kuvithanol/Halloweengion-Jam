@@ -1,0 +1,6 @@
+Template: NONE
+Palette: 0
+EffectColorA: 19
+EffectColorB: 5
+PlacedObjects: LightSource><721.8361><1274.115><1~Environment~0~119~-378~-256.3975~0~0, SlimeMold><743.6912><1306.441><-739~4~2~3, SlimeMold><765.6406><1307.583><-768~-91~2~3, SlimeMold><768.0662><1328.579><-770~-202~2~3, CosmeticSlimeMold><768.3731><1294.092><7~85, SlimeMold><774.0865><1350.385><-776~-304~2~3, 
+FadePalette: 10, 0.6086956, 0.6086956
