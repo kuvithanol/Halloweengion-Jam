@@ -1,7 +1,7 @@
 Template: NONE
 Clouds: 0.2969573
 Grime: 0.1473641
-Palette: 1
+Palette: 0
 EffectColorA: 8
 EffectColorB: 19
 Effects: SkyDandelions-0.805122-20-20, Fog-0.7308834-35.1225-106.8375, 
