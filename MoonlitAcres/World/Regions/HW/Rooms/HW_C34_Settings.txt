@@ -1,0 +1,8 @@
+Template: NONE
+Clouds: 0.5
+Grime: 0.6195652
+Palette: 0
+EffectColorB: 9
+PlacedObjects: ParticleVisualCustomizer><177.4789><668.6989><-240~-411~FFFFFF~000000~FFFFFF~000000~-5^-137~Foreground~SkyDandelion~False~0~0~30~0~20~0~Basic, ParticleWaviness><220.9897><743.0503><452~-552~11.09674~1.834783~1.108262~0.02~1~30^30~0~0, RectParticleSpawner><226.7051><764.9719><126~-470~3072^28~32^-66~1~1~2~2~80~0~600~0~5.869565~8~0~True, PlacedWind><2431.612><486.1661><-2~228~885~225~889~-6~-1~Creatures, PlayerPushback><3304.935><585.4246><-136~-1, 
+AmbientSounds: OMNI><AM_ENV-WinterHum.ogg><695.7551><396.8><0.4565217><1.03913, OMNI><AM_WIN-HowlingWnd.ogg><720.3><547.7466><0.2065217><1, SPOT><AM_WIN-StrongWnd2.ogg><410.9421><378.9444><0.8043478><1><2692.942><652.9444><-175.3553><-134.3553><0><0.08913057, SPOT><AM_WIN-StrongWnd2.ogg><809.0978><407.9244><0.8043478><1><2995.098><643.9244><-236.3553><-228.3553><0><0.1, 
+FadePalette: 10, 0.7065217, 0.7065217, 0.7065217
