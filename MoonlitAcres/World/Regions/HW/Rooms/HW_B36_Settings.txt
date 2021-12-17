@@ -1,0 +1,7 @@
+Template: NONE
+DangerType: FloodAndRain
+Palette: 1
+EffectColorA: 4
+EffectColorB: 2
+PlacedObjects: LightSource><497.6572><124.3763><0.2065217~Environment~-586~296~-12~-110.3975~1~0, LightSource><1770.42><196.6061><0.2065217~Environment~-422~-425~-16~-151.3975~1~0, DangleFruit><738.6841><199.0782><42~-199~2~3, DangleFruit><778.3996><177.173><-63~-173~2~3, DangleFruit><1521.542><192.1955><-95~-166~2~3, Corruption><516.3616><174.3943><122~131, Corruption><1452.307><312.0516><64~170, CorruptionTube><1530.128><287.6536><177~17, Corruption><1307.555><282.455><23~148, Corruption><691.8337><223.6112><0~100, CorruptionTube><421.0791><317.5663><348~-74, Corruption><1526.716><292.5529><0~100, ReliableSpear><298.335><188.681><, DeadTokenStalk><607.3514><397.7466><-28~-45, DeadTokenStalk><402.2267><404.9872><-8~-59, VoidSpawnEgg><1712.062><387.683><0~0~2~3~0, VoidSpawnEgg><1220.698><252.7798><0~0~2~3~0, VoidSpawnEgg><559.7009><399.7477><0~0~2~3~0, VoidSpawnEgg><418.3002><402.7432><0~0~2~3~0, VoidSpawnEgg><1040.667><332.3898><0~0~2~3~0, VoidSpawnEgg><1040.631><188.0894><0~0~2~3~0, LightSource><1153.06><138.8123><0.2065217~Environment~616~132~92~-128.3975~1~0, DangleFruit><443.66><230.4286><0~0~2~3, DangleFruit><419.0801><269.5667><0~0~2~3, DangleFruit><721.9653><217.803><0~0~2~3, DangleFruit><1428.194><183.942><-5~-91~2~3, DangleFruit><562.6406><240.8922><-126~62~2~3, ReliableSpear><1924.915><99.38664><, 
+FadePalette: 10, 0.8043478, 0.8043478

@@ -20,6 +20,9 @@ HW_B14 : HW_connec, HW_A11, HW_C15, HW_A13
 HW_C15 : GATE_HW_SH, HW_B14, HW_S03
 HW_A16 : DISCONNECTED, HW_A10
 
+HW_B36 : DISCONNECTED, HW_A33
+HW_A33 : DISCONNECTED, DISCONNECTED, HW_B36
+
 HW_S01 : HW_C03 : SHELTER
 HW_S02 : HW_A07 : SHELTER
 HW_S03 : HW_C15 : SHELTER
@@ -31,6 +34,9 @@ CREATURES
 HW_B01 : 2-Centipede-{0.9}
 HW_B09 : 10-Centipede-{0.5}, 9-White
 HW_A16 : 2-SmallNeedleWorm-2
+
+HW_B36 : 3-Mouse-6, 5-Spider-4, 6-Spider-4, 4-BigSpider-1
+
 //white
 
 

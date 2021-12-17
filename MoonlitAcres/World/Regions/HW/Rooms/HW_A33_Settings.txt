@@ -1,0 +1,7 @@
+Template: NONE
+DangerType: FloodAndRain
+Palette: 0
+EffectColorA: 4
+EffectColorB: 2
+PlacedObjects: LightSource><493.6638><419.8853><0.1630435~Environment~173~374~50~86.60254~1~0, Corruption><700.9377><481.0691><-29~54, CosmeticSlimeMold><389.08><251.8553><0~100, CosmeticSlimeMold><200.8079><362.9414><0~100, CosmeticSlimeMold2><245.8002><336.5074><0~100, SlimeMold><369.1758><240.0643><-139~-154~2~3, SlimeMold><143.0288><388.4479><-235~41~2~3, SlimeMold><217.8035><333.9631><-299~-71~2~3, SlimeMold><138.8843><326.0869><-244~21~2~3, CosmeticSlimeMold><673.9738><314.8017><0~100, ReliableSpear><638.666><428.6115><, ReliableSpear><574.8893><233.4166><, CosmeticSlimeMold><185.6051><492.3298><0~100, CosmeticSlimeMold2><437.332><255.8915><0~100, SlimeMold><406.7017><230.6941><-3~-103~2~3, 
+FadePalette: 10, 0.8043478
