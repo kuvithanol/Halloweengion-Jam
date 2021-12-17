@@ -1,0 +1,7 @@
+Template: NONE
+RandomItemSpearChance: 0
+Palette: 10
+EffectColorA: 19
+EffectColorB: 4
+PlacedObjects: UniqueDataPearl><844.6493><446.617><1~-406~0~0~0~0, LightFixture><470.0569><319.9479><HolyFire~-398.6795~-266~42, Corruption><790.8361><337.8646><-5~60, LightFixture><630.8105><322.8139><HolyFire~-560.6795~-201~69, LightFixture><773.8925><89.64038><SlimeMoldLight~-340.6795~11~11, LightFixture><194.0047><300.95><HolyFire~17.32051~-10~59, LightSource><890.3931><455.581><0.5326087~White~-158~110~-379~59.60254~1~0, 
+FadePalette: 0, 0.2065217
