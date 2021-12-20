@@ -1,0 +1,6 @@
+Template: NONE
+Palette: 0
+EffectColorA: 2
+EffectColorB: 3
+PlacedObjects: Corruption><310.6791><286.911><4~76, Corruption><388.176><285.8451><0~70, DangleFruit><460.0504><299.7627><0~0~2~3, DangleFruit><429.2427><286.9498><0~0~2~3, DangleFruit><273.7737><299.8014><0~0~2~3, ReliableSpear><610.8635><274.3961><, VoidSpawnEgg><580.3549><491.8876><-718~40~2~3~0, VoidSpawnEgg><385.3093><483.8104><-516~34~2~3~0, LightSource><441.199><351.0204><0.2065217~Environment~-199~-291~-79~-337.3975~1~0, LightSource><479.2985><537.694><0.3586957~EffectColor2~5~85~50~86.60254~1~0, LightSource><622.1><514.3677><0.3586957~EffectColor2~3~85~50~86.60254~1~0, LightSource><565.1951><518.3077><0.3586957~EffectColor2~2~83~50~86.60254~1~0, LightSource><417.3015><565.0568><0.3586957~EffectColor1~4~83~50~86.60254~1~0, LightSource><642.4453><519.2931><0.4021739~EffectColor2~2~83~50~86.60254~1~0, LightSource><506.0519><492.277><0.4021739~EffectColor2~3~81~50~86.60254~1~0, LightSource><366.1541><504.0745><0.4021739~EffectColor2~5~80~50~86.60254~1~0, LightSource><570.0535><501.2874><0.4021739~EffectColor1~5~79~50~86.60254~1~0, LightSource><432.9153><495.6812><0.4021739~EffectColor1~6~78~50~86.60254~0~0, LightSource><293.9186><509.3173><0.4021739~EffectColor1~1~81~50~86.60254~0~0, 
+FadePalette: 10, 0.8043478
