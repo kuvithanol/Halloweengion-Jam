@@ -1,6 +1,6 @@
 Template: NONE
 Palette: 19
 EffectColorA: 6
-PlacedObjects: LightFixture><631.4496><384.0134><HolyFire~17.32051~-10~56, LightFixture><289.0555><402.9535><HolyFire~17.32051~-10~71, 
+PlacedObjects: LightFixture><651.4496><422.0134><HolyFire~17.32051~-10~56, LightFixture><370.0555><463.9535><HolyFire~17.32051~-10~71, 
 AmbientSounds: OMNI><AM_ENV-CityTone.ogg><707.9165><564.1392><0.2391304><1, 
 FadePalette: 10, 0.8043478
