@@ -1,0 +1,123 @@
+ROOMS
+
+GATE_HW_SH : HW_B47, DISCONNECTED : GATE
+GATE_LF_HW : DISCONNECTED, HW_B01 : GATE
+HW_B01 : HW_A02, GATE_LF_HW
+HW_A02 : HW_C03, HW_B01
+HW_C03 : HW_A04, HW_A08, HW_A02, HW_S01
+HW_A04 : HW_A05, HW_C03 : SWARMROOM
+HW_A05 : HW_A06, HW_A04, HW_B09
+HW_A06 : HW_B09, HW_A05
+HW_A07 : HW_S02, HW_A10, HW_B09
+HW_A08 : HW_B09, HW_C03, HW_B12
+HW_B09 : HW_A07, HW_A06, DISCONNECTED, HW_A11, HW_A05, HW_A08
+HW_A10 : HW_A16, HW_A07, HW_connec
+HW_connec : HW_A10, HW_B14
+HW_A11 : HW_B09, HW_B14, HW_B12
+HW_B12 : HW_A11, HW_A13, HW_A08
+HW_A13 : HW_B12, HW_B14
+HW_B14 : HW_connec, HW_A11, HW_C15, HW_A13
+HW_C15 : HW_B17, HW_B14, HW_S03
+HW_A16 : DISCONNECTED, HW_A10
+
+HW_A18 : HW_B17, HW_C20
+HW_B17 : HW_C15, HW_A19, HW_A18
+HW_A19 : HW_B17, HW_B21
+HW_B21 : HW_A19, HW_C20, HW_A22
+HW_C20 : HW_B21, HW_A18, HW_A23
+HW_A22 : HW_B24, HW_B21
+HW_A23 : HW_C20, HW_A26
+HW_B24 : HW_A25, HW_B27, HW_A22
+HW_A25 : HW_A28, HW_B24
+HW_A26 : HW_B27, HW_A23, HW_A33
+HW_B27 : HW_A28, HW_B24, HW_B32, HW_A26
+HW_A28 : HW_C29, HW_A25, HW_B31, HW_B27
+HW_C29 : HW_A30, HW_A28
+HW_A30 : HW_C29, HW_C34, HW_B31
+HW_B31 : HW_A30, HW_A28, HW_A35, HW_S04, HW_B32
+HW_B32 : HW_B31, HW_B27, HW_A33
+HW_A33 : HW_B32, HW_A26, HW_B36
+HW_A35 : HW_C34, HW_B31
+HW_C34 : HW_A41, HW_A30, HW_A35, HW_A38
+HW_B36 : HW_A37, HW_A40, HW_A33
+HW_A37 : HW_A39, HW_B36
+HW_A39 : HW_A43, HW_A37
+HW_A38 : HW_C34, HW_B42
+HW_A40 : HW_C44, HW_B36
+HW_A41 : HW_C34, HW_B42
+HW_B42 : HW_A41, HW_A38, HW_A43
+HW_A43 : HW_B42, HW_A39, HW_B45
+HW_C44 : HW_B45, HW_A40
+HW_B45 : HW_A43, HW_A46, HW_C44
+HW_A46 : HW_B45, HW_B47, HW_S05
+HW_B47 : GATE_HW_SH, HW_A46
+
+HW_S01 : HW_C03 : SHELTER
+HW_S02 : HW_A07 : SHELTER
+HW_S03 : HW_C15 : SHELTER
+HW_S04 : HW_B31 : SHELTER
+HW_S05 : HW_A46 : SHELTER
+
+END ROOMS
+	
+CREATURES
+//all
+HW_B01 : 2-Centipede-{0.9}
+HW_B09 : 10-Centipede-{0.5}, 9-White
+HW_A16 : 2-SmallNeedleWorm-2
+HW_C44 : 2-BigSpider-2
+HW_C20 : 3-Daddy
+HW_A23 : 2-BigSpider
+HW_B17 : 3-Green
+HW_A22 : 2-Green
+HW_B36 : 7-Daddy, 6-Lantern Mouse-3, 5-Lantern Mouse-2, 3-BigSpider
+HW_B27 : 5-Lantern Mouse-3, 4-Lantern Mouse-3
+HW_A35 : 2-Lantern Mouse-3
+HW_A30 : 4-Small Centipede-2
+HW_A23 : 3-Lantern Mouse-3
+HW_B47 : 2-Green
+
+//white
+(0)HW_A28 : 4-ReaperLizard
+(0)HW_B42 : 3-White
+(0)HW_B24 : 3-White
+
+//white and yellow
+(0,1)HW_A11 : 3-pink
+(0,1)HW_A02 : 2-Pink
+(0,1)HW_C34 : 4-Green
+(0,1)HW_A39 : 2-Centipede-{0.7}
+(0,1)HW_C20 : 3-Centipede-{0.9}
+(0,1)HW_B45 : 3-Pink
+(0,1)HW_A36 : 2-Lantern Mouse-3
+(0,1)HW_A25 : 2-Blue
+
+//yellow
+(1)HW_B12 : 3-green
+(1)HW_B42 : 3-Blue
+
+//white and red
+(0,2)HW_C03 : 5-ReaperLizard
+(0,2)HW_A10 : 4-ReaperLizard
+(0,2)HW_B12 : 3-ReaperLizard
+(0,2)HW_B32 : 3-Pink
+(0,2)HW_B21 : 3-White
+(0,2)HW_A30 : 3-Centipede-{0.9}
+
+//red
+(2)OFFSCREEN : 0-KingVulture-1
+(2)HW_A11 : 3-Cyan
+(2)HW_A02 : 2-ReaperLizard
+(2)HW_C34 : 4-Red
+(2)HW_B42 : 3-Cyan
+(2)HW_C44 : 6-SpitterSpider
+(2)HW_A39 : 2-RedCentipede
+(2)HW_B45 : 3-ReaperLizard
+(2)HW_B24 : 3-White-{0.6}-2
+(2)HW_B27 : 5-Daddy
+(2)HW_A25 : 2-Cyan
+
+END CREATURES
+
+BAT MIGRATION BLOCKAGES
+END BAT MIGRATION BLOCKAGES
