@@ -1,13 +1,17 @@
 using BepInEx;
 using UnityEngine;
 using Colour = UnityEngine.Color;
+using ReaperLizard;
+using System.Reflection;
+using MonoMod.RuntimeDetour;
+using static SandboxUnlockCore.Main;
 
 namespace MoonlitAcre {
 
     [BepInPlugin("com.rainworldgame.halloweegionjam.plugin", "Halloweegion Jam (Moonlit Acre)", "1.0")]
     public class MoonlitAcreModBase : BaseUnityPlugin {
         private void OnEnable() {
-            //SovSam's colorful daddies
+            //SovSam and LB's colorful daddies
             FestiveRot.ApplyHooks();
 
             On.AbstractConsumable.IsTypeConsumable += AbstractConsumableOnIsTypeConsumable;
@@ -17,10 +21,42 @@ namespace MoonlitAcre {
             On.RainWorld.Start += RainWorldOnStart;
             On.ItemSymbol.SpriteNameForItem += ItemSymbolOnSpriteNameForItem;
             On.ItemSymbol.ColorForItem += ItemSymbolOnColorForItem;
-            
+            On.MultiplayerUnlocks.SandboxUnlockForSymbolData += MultiplayerUnlocksOnSandboxUnlockForSymbolData;
+            On.MultiplayerUnlocks.SymbolDataForSandboxUnlock += MultiplayerUnlocksOnSymbolDataForSandboxUnlock;
+
             //Lightning Colour change by LB Gamer
             On.Lightning.ctor += LightningOnCtor;
+
+            //Reaper lizards shouldn't replace magentas and be always unlocked anymore
+            new Hook(
+                typeof(NLELizard).GetMethod("SaveState_AbstractCreatureFromString", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance),
+                typeof(MoonlitAcreModBase).GetMethod(nameof(NLELizard_SaveState_AbstractCreatureFromStringHK), BindingFlags.NonPublic | BindingFlags.Static));
+            new Hook(
+                typeof(NLELizard).GetMethod("SaveState_AbstractCreatureToString", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance),
+                typeof(MoonlitAcreModBase).GetMethod(nameof(NLELizard_SaveState_AbstractCreatureToStringHK), BindingFlags.NonPublic | BindingFlags.Static));
+            new Hook(
+                typeof(NLESandbox).GetMethod("Unlock", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance),
+                typeof(MoonlitAcreModBase).GetMethod(nameof(NLESandbox_UnlockHK), BindingFlags.NonPublic | BindingFlags.Static));
         }
+
+        private IconSymbol.IconSymbolData MultiplayerUnlocksOnSymbolDataForSandboxUnlock(On.MultiplayerUnlocks.orig_SymbolDataForSandboxUnlock orig, MultiplayerUnlocks.SandboxUnlockID unlockID)
+            => unlockID == EnumExt_MoonlitAcre.PumpkinUnlock 
+            ? new(CreatureTemplate.Type.StandardGroundCreature, EnumExt_MoonlitAcre.Pumpkin, 0) 
+            : orig(unlockID);
+
+        private MultiplayerUnlocks.SandboxUnlockID MultiplayerUnlocksOnSandboxUnlockForSymbolData(On.MultiplayerUnlocks.orig_SandboxUnlockForSymbolData orig, IconSymbol.IconSymbolData data)
+            => data.itemType == EnumExt_MoonlitAcre.Pumpkin 
+            ? EnumExt_MoonlitAcre.PumpkinUnlock 
+            : orig(data);
+
+        private static AbstractCreature NLELizard_SaveState_AbstractCreatureFromStringHK(On.SaveState.orig_AbstractCreatureFromString orig, World world, string creatureString, bool onlyInCurrentRegion) 
+            => orig(world, creatureString, onlyInCurrentRegion);
+
+        private static string NLELizard_SaveState_AbstractCreatureToStringHK(On.SaveState.orig_AbstractCreatureToString_AbstractCreature_WorldCoordinate orig, AbstractCreature critter, WorldCoordinate pos)
+            => orig(critter, pos);
+
+        private static bool NLESandbox_UnlockHK(On.MultiplayerUnlocks.orig_SandboxItemUnlocked orig, MultiplayerUnlocks self, MultiplayerUnlocks.SandboxUnlockID unlock)
+            => orig(self, unlock);
 
         private Colour ItemSymbolOnColorForItem(On.ItemSymbol.orig_ColorForItem orig, AbstractPhysicalObject.AbstractObjectType itemType, int intData) {
             if (itemType == EnumExt_MoonlitAcre.Pumpkin)
@@ -44,6 +80,7 @@ namespace MoonlitAcre {
             EmbeddedResourceLoader.LoadEmbeddedResource("pumpkin2");
             for (int i = 1; i <= 2; i++) EmbeddedResourceLoader.LoadEmbeddedResource("pumpkinbit" + i + "2");
             EmbeddedResourceLoader.LoadEmbeddedResource("pumpkinicon");
+            items.Add(EnumExt_MoonlitAcre.PumpkinUnlock);
         }
 
         private void LightningOnCtor(On.Lightning.orig_ctor orig, Lightning self, Room room, float intensity, bool bkgOnly) {
