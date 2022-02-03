@@ -22,6 +22,12 @@
     <Reference Include="MonoMod.RuntimeDetour">
       <HintPath>References\MonoMod.RuntimeDetour.dll</HintPath>
     </Reference>
+    <Reference Include="ReaperLizard">
+      <HintPath>References\ReaperLizard.dll</HintPath>
+    </Reference>
+    <Reference Include="CreatureCore">
+      <HintPath>References\SandboxCore.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>References\UnityEngine.dll</HintPath>
     </Reference>
